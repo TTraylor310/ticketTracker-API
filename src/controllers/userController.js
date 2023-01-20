@@ -11,7 +11,7 @@ const generateToken = id => {
 }
 
 // @desc - Register a new User
-// @route - /api/users
+// @route - POST - /api/users
 // @access - PUBLIC
 const registerUser = asyncHandler(async(req, res) => {
   const { name, email, password } = req.body
@@ -48,7 +48,7 @@ const registerUser = asyncHandler(async(req, res) => {
 })
 
 // @desc - Login a User
-// @route - /api/users/login
+// @route - POST - /api/users/login
 // @access - PUBLIC
 const loginUser = asyncHandler(async(req, res) => {
   const {email, password} = req.body
@@ -69,7 +69,7 @@ const loginUser = asyncHandler(async(req, res) => {
 
 
 // @desc - Get current user information
-// @route - /api/users/me
+// @route - GET - /api/users/me
 // @access - PRIVATE
 const getMe = asyncHandler(async(req, res) => {
   // console.log('CHECK THIS', req.user)
