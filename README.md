@@ -13,3 +13,4 @@ Dependencies:
 
 - bcryptjs
 - jsonwebtoken
+- mongoose (mongoDB)
