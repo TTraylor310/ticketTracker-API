@@ -81,5 +81,5 @@ module.exports = {
   getTickets,
   getTicket,
   deleteTicket,
-  
+  updateTicket,
 }
