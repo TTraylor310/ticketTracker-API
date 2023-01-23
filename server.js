@@ -17,7 +17,7 @@ connectDB()
 
 // User Routes: registerUser, loginUser, getMe
 app.use('/api/users', require('./src/routes/userRoutes'))
-
+app.use('/api/tickets', require('./src/routes/ticketRoutes'))
 
 app.use(errorHandler)
 
