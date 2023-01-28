@@ -10,6 +10,8 @@ const {
 } = require('../controllers/ticketController')
 
 // re-route into note Routers
+const noteRouter = require('./noteRoutes')
+router.use('/:ticketId/notes', noteRouter)
 
 router.route('/')
   .get(protect, getTickets)
